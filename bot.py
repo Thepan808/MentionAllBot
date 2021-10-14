@@ -33,7 +33,7 @@ async def start(event):
 
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**⚙️ Menu de comandos do 𖤘 ⃝𝑴 ᩠𝒆 ᩠𝒏 ᩠𝒕 ᩠𝒊 ᩠𝒐 ᩠𝒏 ⿻ꦿꪳ։ 𝑨 ᩠𝒍 ᩠𝒍৴ํฺ͘.•🛸 ݈݇─𖤘 ⃝**\n\nComando: /mentionall\n__Você usa o comando + texto para mencionar o pessoal ou então não precisa mandar algo só por o comando.__\n`Examplo: /mentionall Boa noite é o caralho!`\n__Bem simples, mas você também consegue chamar marcando em uma mensagem. By:@xPV_D4_M34_S4Y0R1_D3M0N_CR4ZZYx__.\n\nEnfim, bot criado pelo [Criador](https://t.me/xPV_D4_M34_S4Y0R1_D3M0N_CR4ZZYx)"
+  helptext = "**⚙️ Menu de comandos do 𖤘 ⃝𝑴 ᩠𝒆 ᩠𝒏 ᩠𝒕 ᩠𝒊 ᩠𝒐 ᩠𝒏 ⿻ꦿꪳ։ 𝑨 ᩠𝒍 ᩠𝒍৴ํฺ͘.•🛸 ݈݇─𖤘 ⃝**\n\nComando: /mentionall\n__Você usa o comando + texto para mencionar o pessoal ou então não precisa mandar algo só por o comando.__\n`Examplo: /mentionall Boa noite é o caralho!`\n__Bem simples, mas você também consegue chamar marcando em uma mensagem. __.\n\nEnfim, bot criado pelo [•𝘊𝘳𝘪𝘢𝘥𝘰𝘳•](https://t.me/xPV_D4_M34_S4Y0R1_D3M0N_CR4ZZYx)"
   await event.reply(
     helptext,
     link_preview=False,
