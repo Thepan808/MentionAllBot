@@ -21,26 +21,26 @@ spam_chats = []
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
   await event.reply(
-    "__**I'm MentionAll Bot**, I can mention almost all members in group or channel 👻\nClick **/help** for more information__\n\n Follow [@AnjanaMadu](https://github.com/AnjanaMadu) on Github",
+    "__**Olá eu sou 𖤘 ⃝𝑴 ᩠𝒆 ᩠𝒏 ᩠𝒕 ᩠𝒊 ᩠𝒐 ᩠𝒏 ⿻ꦿꪳ։ 𝑨 ᩠𝒍 ᩠𝒍৴ํฺ͘.•🛸 ݈݇─𖤘 ⃝**, Eu sou um chamador de todos os membros, infernizar pouquin 👻\nClique no **/help** para mais informações ademir__\n\n Chegue no meu canal aí brodi[@GR4V3_S4D_CRAZZY](https://t.me/GR4V3_S4D_CRAZZY)",
     link_preview=False,
     buttons=(
       [
-        Button.url('📣 Channel', 'https://t.me/harp_tech'),
-        Button.url('📦 Source', 'https://github.com/AnjanaMadu/MentionAllBot')
+        Button.url('🤺 Canal', 'https://t.me/RabiscoS_MeuS_77'),
+        Button.url('⚙️ Musics', 'https://t.me/GR4V3_S4D_CRAZZY')
       ]
     )
   )
 
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Help Menu of MentionAllBot**\n\nCommand: /mentionall\n__You can use this command with text what you want to mention others.__\n`Example: /mentionall Good Morning!`\n__You can you this command as a reply to any message. Bot will tag users to that replied messsage__.\n\nFollow [@AnjanaMadu](https://github.com/AnjanaMadu) on Github"
+  helptext = "**⚙️ Menu de comandos do 𖤘 ⃝𝑴 ᩠𝒆 ᩠𝒏 ᩠𝒕 ᩠𝒊 ᩠𝒐 ᩠𝒏 ⿻ꦿꪳ։ 𝑨 ᩠𝒍 ᩠𝒍৴ํฺ͘.•🛸 ݈݇─𖤘 ⃝**\n\nComando: /mentionall\n__Você usa o comando + texto para mencionar o pessoal ou então não precisa mandar algo só por o comando.__\n`Examplo: /mentionall Boa noite é o caralho!`\n__Bem simples, mas você também consegue chamar marcando em uma mensagem. By:@xPV_D4_M34_S4Y0R1_D3M0N_CR4ZZYx__.\n\nEnfim, bot criado pelo [Criador](https://t.me/xPV_D4_M34_S4Y0R1_D3M0N_CR4ZZYx)"
   await event.reply(
     helptext,
     link_preview=False,
     buttons=(
       [
-        Button.url('📣 Channel', 'https://t.me/harp_tech'),
-        Button.url('📦 Source', 'https://github.com/AnjanaMadu/MentionAllBot')
+        Button.url('🤺 Canal', 'https://t.me/RabiscoS_MeuS_77'),
+        Button.url('⚙️ Musics', 'https://t.me/GR4V3_S4D_CRAZZY')
       ]
     )
   )
@@ -49,7 +49,7 @@ async def help(event):
 async def mentionall(event):
   chat_id = event.chat_id
   if event.is_private:
-    return await event.respond("__This command can be use in groups and channels!__")
+    return await event.respond("__O comando só pode ser usado em grupos ou canais, ademiro!__")
   
   is_admin = False
   try:
@@ -71,10 +71,10 @@ async def mentionall(event):
     ):
       is_admin = True
   if not is_admin:
-    return await event.respond("__Only admins can mention all!__")
+    return await event.respond("__Apenas administradores pode usar o bot!__")
   
   if event.pattern_match.group(1) and event.is_reply:
-    return await event.respond("__Give me one argument!__")
+    return await event.respond("__Me envie um argumento!__")
   elif event.pattern_match.group(1):
     mode = "text_on_cmd"
     msg = event.pattern_match.group(1)
@@ -82,9 +82,9 @@ async def mentionall(event):
     mode = "text_on_reply"
     msg = await event.get_reply_message()
     if msg == None:
-        return await event.respond("__I can't mention members for older messages! (messages which are sent before I'm added to group)__")
+        return await event.respond("__Não posso mencionar uma mensagem antiga para os membros! (Mande a mensagem antes de eu ser adicionado)__")
   else:
-    return await event.respond("__Reply to a message or give me some text to mention others!__")
+    return await event.respond("__Marque a vossa mensagem, para que eu retribua a mensagem para todos!__")
   
   spam_chats.append(chat_id)
   usrnum = 0
@@ -111,13 +111,13 @@ async def mentionall(event):
 @client.on(events.NewMessage(pattern="^/cancel$"))
 async def cancel_spam(event):
   if not event.chat_id in spam_chats:
-    return await event.respond('__There is no proccess on going...__')
+    return await event.respond('__Não há processo em andamento...__')
   else:
     try:
       spam_chats.remove(event.chat_id)
     except:
       pass
-    return await event.respond('__Stopped.__')
+    return await event.respond('__Parei.__')
 
 print(">> BOT STARTED <<")
 client.run_until_disconnected()
