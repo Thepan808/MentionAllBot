@@ -21,7 +21,7 @@ spam_chats = []
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
   await event.reply(
-    "__**Olá eu sou 𖤘 ⃝𝑴 ᩠𝒆 ᩠𝒏 ᩠𝒕 ᩠𝒊 ᩠𝒐 ᩠𝒏 ⿻ꦿꪳ։ 𝑨 ᩠𝒍 ᩠𝒍৴ํฺ͘.•🛸 ݈݇─𖤘 ⃝**, Eu sou um chamador de todos os membros, infernizar pouquin 👻\nClique no **/help** para mais informações ademir__\n\n Chegue no meu canal aí brodi[@GR4V3_S4D_CRAZZY](https://t.me/GR4V3_S4D_CRAZZY)",
+    "__**Olá eu sou 𖤘 ⃝𝑴 ᩠𝒆 ᩠𝒏 ᩠𝒕 ᩠𝒊 ᩠𝒐 ᩠𝒏 ⿻ꦿꪳ։ 𝑨 ᩠𝒍 ᩠𝒍৴ํฺ͘.•🛸 ݈݇─𖤘 ⃝**, Eu sou um chamador de todos os membros, infernizar pouquin 👻\nClique no **/help** para mais informações ademir__\n\n Chegue no meu canal aí brodi ➜ [@GR4V3_S4D_CRAZZY](https://t.me/GR4V3_S4D_CRAZZY)",
     link_preview=False,
     buttons=(
       [
