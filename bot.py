@@ -117,7 +117,7 @@ async def cancel_spam(event):
       spam_chats.remove(event.chat_id)
     except:
       pass
-    return await event.respond('__Parei.__')
+    return await event.respond('__Parei admin ノ•̀ o •́ ノ ~ ┻━┻.__')
 
 print(">> BOT STARTED <<")
 client.run_until_disconnected()
