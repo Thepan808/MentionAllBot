@@ -21,26 +21,26 @@ spam_chats = []
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
   await event.reply(
-    "__**Olá eu sou 𖤘 ⃝𝑴 ᩠𝒆 ᩠𝒏 ᩠𝒕 ᩠𝒊 ᩠𝒐 ᩠𝒏 ⿻ꦿꪳ։ 𝑨 ᩠𝒍 ᩠𝒍৴ํฺ͘.•🛸 ݈݇─𖤘 ⃝**, Eu sou um chamador de todos os membros, infernizar pouquin 👻\nClique no **/help** para mais informações ademir__\n\n Chegue no meu canal aí brodi ➜ [@GR4V3_S4D_CRAZZY](https://t.me/GR4V3_S4D_CRAZZY)",
+    "__**Olá eu sou 𝗗𝗲𝗺𝗼𝗻𝗶𝗰𝗸 - 𝗠𝗲𝗻𝘁𝗶𝗼𝗻 𝗔𝗹𝗹 🇧🇷**, Eu sou um chamador de todos os membros, pra chamar todos os membros do seu grupo\nClique no **/help** para mais informações meu nobre__\n\n Chegue no meu canal aí onde tem os meus bots ➜ [@botssaved](https://t.me/botssaved)",
     link_preview=False,
     buttons=(
       [
-        Button.url('🤺 Canal', 'https://t.me/RabiscoS_MeuS_77'),
-        Button.url('⚙️ Musics', 'https://t.me/GR4V3_S4D_CRAZZY')
+        Button.url('👑 Criador', 'https://t.me/The_Panda_Official'),
+        Button.url('🇧🇷 Canal', 'https://t.me/botssaved')
       ]
     )
   )
 
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**⚙️ Menu de comandos do 𖤘 ⃝𝑴 ᩠𝒆 ᩠𝒏 ᩠𝒕 ᩠𝒊 ᩠𝒐 ᩠𝒏 ⿻ꦿꪳ։ 𝑨 ᩠𝒍 ᩠𝒍৴ํฺ͘.•🛸 ݈݇─𖤘 ⃝**\n\nComando: /all\n__Você usa o comando + texto para mencionar o pessoal ou então não precisa mandar algo só por o comando.__\n`Exemplo: /all Boa noite é o caralho!`\n__Bem simples, mas você também consegue chamar marcando em uma mensagem__.\n\nEnfim, bot criado pelo ➜ [•𝘊𝘳𝘪𝘢𝘥𝘰𝘳•](https://t.me/The_Panda_Ofc)"
+  helptext = "**⚙️ Menu de comandos do 𝗗𝗲𝗺𝗼𝗻𝗶𝗰𝗸 - 𝗠𝗲𝗻𝘁𝗶𝗼𝗻 𝗔𝗹𝗹 🇧🇷**\n\nComando: /all\n__Você usa o comando + texto para mencionar o pessoal ou então não precisa mandar algo só por o comando.__\n`Exemplo: /all Boa noite, fino senhores!`\n__Bem simples, mas você também consegue chamar marcando em uma mensagem__.\n\nEnfim, bot criado pelo ➜ [•𝘊𝘳𝘪𝘢𝘥𝘰𝘳•](https://t.me/The_Panda_Official)"
   await event.reply(
     helptext,
     link_preview=False,
     buttons=(
       [
-        Button.url('🤺 Canal', 'https://t.me/RabiscoS_MeuS_77'),
-        Button.url('⚙️ Musics', 'https://t.me/GR4V3_S4D_CRAZZY')
+        Button.url('🇧🇷 Canal', 'https://t.me/botssaved'),
+        Button.url('👑 Criador', 'https://t.me/The_Panda_Official')
       ]
     )
   )
