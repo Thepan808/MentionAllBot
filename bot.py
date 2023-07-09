@@ -18,10 +18,10 @@ bot_token = os.environ.get("TOKEN")
 client = TelegramClient('client', api_id, api_hash).start(bot_token=bot_token)
 spam_chats = []
 
-@client.on(events.NewMessage(pattern="^/start$"))
+@client.on(events.NewMessage(pattern="^/ssstart$"))
 async def start(event):
   await event.reply(
-    "__**Olá eu sou 𝗗𝗲𝗺𝗼𝗻𝗶𝗰𝗸 - 𝗠𝗲𝗻𝘁𝗶𝗼𝗻 𝗔𝗹𝗹 🇧🇷**, Eu sou um chamador de todos os membros, pra chamar todos os membros do seu grupo\nClique no **/help** para mais informações meu nobre__\n\n Chegue no meu canal aí onde tem os meus bots ➜ [@botssaved](https://t.me/botssaved)",
+    "__**Olá eu sou 𝗠𝗲𝗻𝘁𝗶𝗼𝗻 𝗔𝗹𝗹 🇧🇷**, Eu sou um chamador de todos os membros, pra chamar todos os membros do seu grupo\nClique no **/help** para mais informações meu nobre__\n\n Chegue no meu canal aí onde tem os meus bots ➜ [@botssaved](https://t.me/botssaved)",
     link_preview=False,
     buttons=(
       [
@@ -33,7 +33,7 @@ async def start(event):
 
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**⚙️ Menu de comandos do 𝗗𝗲𝗺𝗼𝗻𝗶𝗰𝗸 - 𝗠𝗲𝗻𝘁𝗶𝗼𝗻 𝗔𝗹𝗹 🇧🇷**\n\nComando: /all\n__Você usa o comando + texto para mencionar o pessoal ou então não precisa mandar algo só por o comando.__\n`Exemplo: /all Boa noite, fino senhores!`\n__Bem simples, mas você também consegue chamar marcando em uma mensagem__.\n\nEnfim, bot criado pelo ➜ [•𝘊𝘳𝘪𝘢𝘥𝘰𝘳•](https://t.me/The_Panda_Official)"
+  helptext = "**⚙️ Menu de comandos do 𝗠𝗲𝗻𝘁𝗶𝗼𝗻 𝗔𝗹𝗹 🇧🇷**\n\nComando: /all\n__Você usa o comando + texto para mencionar o pessoal ou então não precisa mandar algo só por o comando.__\n`Exemplo: /all Boa noite, fino senhores!`\n__Bem simples, mas você também consegue chamar marcando em uma mensagem__.\n\nEnfim, bot criado pelo ➜ [•𝘊𝘳𝘪𝘢𝘥𝘰𝘳•](https://t.me/The_Panda_Official)"
   await event.reply(
     helptext,
     link_preview=False,
